@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>离线页面 - WMS 智能库存系统</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .logo {
+      max-width: 150px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #1976D2;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: #1976D2;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #1976D2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .tips {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      text-align: left;
+    }
+    .tips h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .tips ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📶</div>
+    <h1>您当前处于离线状态</h1>
+    <p>无法连接到 WMS 智能库存系统。请检查您的网络连接并重试。</p>
+    <p>如果您之前已经登录并缓存了数据，部分功能仍然可用。</p>
+    <a href="/" class="btn">重试连接</a>
+    
+    <div class="tips">
+      <h2>离线工作提示：</h2>
+      <ul>
+        <li>您可以查看已缓存的库存数据</li>
+        <li>您可以创建库存交易记录，它们将在恢复连接后自动同步</li>
+        <li>您可以查看已缓存的报表</li>
+        <li>系统将在网络恢复后自动重新连接</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
